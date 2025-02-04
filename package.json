@@ -1,0 +1,17 @@
+{
+  "name": "exo_express_webserver",
+  "version": "0.1.0",
+  "description": "travel destination website",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.0.1"
+  }
+}
