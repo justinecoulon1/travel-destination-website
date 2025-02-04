@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Eiffel Tower",
+        "location": "Paris, France",
+        "description": "A wrought-iron lattice tower on the Champ de Mars, named after the engineer Gustave Eiffel, it is one of the most iconic structures in the world and the most-visited paid monument in the world.",
+        "short_description": "Iconic iron tower offering panoramic views of Paris.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 2,
+        "name": "Great Wall of China",
+        "location": "Beijing, China",
+        "description": "A series of fortifications made of various materials, the Great Wall stretches over 13,000 miles and is a historical monument symbolizing the strength and resilience of ancient China.",
+        "short_description": "Massive ancient wall stretching over 13,000 miles.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 3,
+        "name": "Colosseum",
+        "location": "Rome, Italy",
+        "description": "An ancient amphitheater built for gladiatorial contests and public spectacles. It remains one of the greatest works of Roman architecture and engineering.",
+        "short_description": "Ancient arena used for gladiatorial games.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 4,
+        "name": "Machu Picchu",
+        "location": "Cusco Region, Peru",
+        "description": "A 15th-century Inca citadel set high in the Andes Mountains, Machu Picchu is an architectural marvel and one of the most famous ancient sites in the world.",
+        "short_description": "Ancient Inca city perched on a mountain top.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 5,
+        "name": "Sydney Opera House",
+        "location": "Sydney, Australia",
+        "description": "A multi-venue performing arts center, the Sydney Opera House is one of the most recognizable and iconic buildings in the world.",
+        "short_description": "World-famous performance arts venue in Sydney.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 6,
+        "name": "Taj Mahal",
+        "location": "Agra, India",
+        "description": "An ivory-white marble mausoleum built in memory of Mumtaz Mahal, the Taj Mahal is a symbol of eternal love and one of the New Seven Wonders of the World.",
+        "short_description": "Beautiful white marble mausoleum and symbol of love.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 7,
+        "name": "Pyramids of Giza",
+        "location": "Giza, Egypt",
+        "description": "Ancient pyramid structures, including the Great Pyramid, built as tombs for pharaohs. These monumental structures are among the Seven Wonders of the Ancient World.",
+        "short_description": "Ancient pyramids, including the Great Pyramid.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 8,
+        "name": "Statue of Liberty",
+        "location": "New York City, USA",
+        "description": "A colossal neoclassical sculpture gifted by France to the United States, it stands as a symbol of freedom and democracy.",
+        "short_description": "Famous statue symbolizing freedom and democracy.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 9,
+        "name": "Christ the Redeemer",
+        "location": "Rio de Janeiro, Brazil",
+        "description": "A towering statue of Jesus Christ that overlooks Rio de Janeiro, the Christ the Redeemer statue is one of the largest and most recognized art deco sculptures in the world.",
+        "short_description": "Massive statue of Jesus Christ overlooking Rio.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 10,
+        "name": "Santorini",
+        "location": "Santorini, Greece",
+        "description": "A volcanic island in the Aegean Sea, Santorini is known for its stunning sunsets, whitewashed buildings, and blue-domed churches, offering breathtaking views of the sea and the caldera.",
+        "short_description": "Stunning island with iconic white buildings and blue domes.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 11,
+        "name": "Mount Fuji",
+        "location": "Honshu, Japan",
+        "description": "Mount Fuji is an active stratovolcano and the highest peak in Japan, standing at 3,776 meters. It is a popular destination for climbers and a symbol of Japan's natural beauty.",
+        "short_description": "Iconic, snow-capped volcano and highest peak in Japan.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 12,
+        "name": "Palace of Versailles",
+        "location": "Versailles, France",
+        "description": "A former royal château, the Palace of Versailles is renowned for its opulent architecture, stunning gardens, and its pivotal role in French history.",
+        "short_description": "Lavish palace with spectacular gardens and architecture.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 13,
+        "name": "Stonehenge",
+        "location": "Wiltshire, England",
+        "description": "Stonehenge is a prehistoric monument consisting of a ring of standing stones, its exact purpose still debated, and remains a mystery to historians and archaeologists.",
+        "short_description": "Prehistoric stone circle with unknown origins.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 14,
+        "name": "Big Ben",
+        "location": "London, England",
+        "description": "Big Ben, officially known as the Elizabeth Tower, is a famous clock tower at the north end of the Palace of Westminster, one of London’s most iconic landmarks.",
+        "short_description": "Famous clock tower and symbol of London.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 15,
+        "name": "Niagara Falls",
+        "location": "Ontario, Canada / New York, USA",
+        "description": "Niagara Falls is a group of three waterfalls on the border between the United States and Canada, known for their breathtaking beauty and as a popular tourist attraction.",
+        "short_description": "Massive waterfalls on the US-Canada border.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 16,
+        "name": "Sagrada Familia",
+        "location": "Barcelona, Spain",
+        "description": "A large basilica designed by architect Antoni Gaudí, the Sagrada Familia has been under construction for over 100 years and is a stunning example of modernist architecture.",
+        "short_description": "Stunning basilica designed by Gaudí in Barcelona.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 17,
+        "name": "Acropolis of Athens",
+        "location": "Athens, Greece",
+        "description": "The Acropolis is an ancient citadel on a rocky outcrop above Athens, home to several significant buildings, including the Parthenon, which dates back to the 5th century BC.",
+        "short_description": "Ancient citadel with historic structures like the Parthenon.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 18,
+        "name": "Banff National Park",
+        "location": "Alberta, Canada",
+        "description": "Banff National Park is a vast, stunning national park located in the Canadian Rockies, known for its picturesque lakes, glaciers, and snow-capped mountains.",
+        "short_description": "A scenic national park in the Canadian Rockies.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 19,
+        "name": "Alhambra",
+        "location": "Granada, Spain",
+        "description": "The Alhambra is a palace and fortress complex that dates back to the 13th century, blending Islamic art and architecture with Christian and Jewish influences.",
+        "short_description": "Historic palace and fortress with stunning Islamic architecture.",
+        "image": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 20,
+        "name": "Dubai Burj Khalifa",
+        "location": "Dubai, United Arab Emirates",
+        "description": "The Burj Khalifa is the tallest skyscraper in the world, standing at 828 meters, and is a symbol of Dubai's modern architectural prowess and economic growth.",
+        "short_description": "World's tallest building offering breathtaking city views.",
+        "image": "",
+        "thumbnail": ""
+    }
+]
