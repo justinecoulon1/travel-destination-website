@@ -1,13 +1,24 @@
 <h2>Destinations</h2>
 
 <div class="destinations-container">
-    {{#each destinations}}
+  {{#each destinations}}
     <div class="card-div">
-        <img src="images/logo.png" alt="" class="thumbnail-img">
-        <h4 class="name">{{this.name}}</h4>
-        <p>{{this.location}}</p>
+      <div class="card-header">
+        <div class="img-div">
+          <img src="images/destinations/{{this.image}}" alt="{{this.name}}" />
+        </div>
+        <div class="name-div">
+          <h4 class="name">{{this.name}}</h4>
+          <div class="location-div">
+            <img src="images/pin.png" alt="pin" /><p>{{this.location}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-content">
+        <p>{{this.short_description}}</p>
+      </div>
     </div>
-    {{else}}
+  {{else}}
     <li>Personne n'a été encodé !</li>
-    {{/each}}
+  {{/each}}
 </div>
