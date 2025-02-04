@@ -17,8 +17,9 @@ app.get('/', (req, res) => {
 })
 
 app.get('/destinations', (req, res) => {
+    const destinations = data;
 
-    res.render('destinations')
+    res.render('destinations', { destinations })
 })
 
 app.listen(3000, () => {
