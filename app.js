@@ -10,6 +10,8 @@ app.set('views', './views');
 
 app.use(express.static('public'));
 
+app.use(express.urlencoded({ extended: true }));
+
 app.engine('handlebars', engine({
     helpers: {
         json: function (context) {
@@ -42,6 +44,21 @@ app.get('/destinations/:destinationId', (req, res) => {
     }
 
     res.render('destination', { destination });
+});
+
+app.get('/about', (req, res) => {
+    res.status(200).render('about');
+})
+
+app.post('/about', (req, res) => {
+    console.log(req.body);
+
+    if (!req.body?.email.trim() || !req.body?.category.trim() || !req.body?.message.trim()) {
+        res.status(200).render('about', { error: 'Veuillez completer les champs obligatoires du formulaire !' });
+        return;
+    }
+
+    res.redirect('/about');
 });
 
 app.listen(3000, () => {

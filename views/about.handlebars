@@ -1,0 +1,32 @@
+<div class="contact-main-container">
+    <div class="text-div">
+        <h2>Contact Us !</h2>
+    </div>
+    <div class="form-div">
+        <form method="post">
+            <label for="email">Email:<p class="required-field">*</p></label>
+            <input id="email" type="text" name="email">
+
+            <label for="pseudo">Pseudo:</label>
+            <input id="pseudo" type="text" name="pseudo">
+
+            <label for="category-select">Category:<p class="required-field">*</p></label>
+            <select name="category" id="category-select">
+                <option value="">--Please choose an option--</option>
+                <option value="info">Information</option>
+                <option value="devis">Devis</option>
+                <option value="reclamation">Reclamation</option>
+                <option value="other">Other</option>=
+            </select>
+
+            <label for="message ">Message:<p class="required-field">*</p></label>
+            <textarea id="message" name="message"> </textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        {{#if error}}
+        <p style="color: crimson;">{{ error }}</p>
+        {{/if }}
+    </div>
+
+
+</div>
