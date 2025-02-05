@@ -422,7 +422,16 @@ h2 {
             textarea,
             select {
                 font-size: 1rem;
-                background-color: grey;
+                padding: 0.3rem;
+                background-color: #383838;
+                border: solid 2px black;
+            }
+
+            button {
+                font-size: 1rem;
+                font-weight: bold;
+                padding: 0.5rem;
+                background-color: #383838;
                 border: solid 2px black;
             }
         }
