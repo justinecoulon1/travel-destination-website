@@ -10,6 +10,13 @@ app.set('views', './views');
 
 app.use(express.static('public'));
 
+app.engine('handlebars', engine({
+    helpers: {
+        json: function (context) {
+            return JSON.stringify(context);
+        }
+    }
+}));
 
 app.get('/', (req, res) => {
 

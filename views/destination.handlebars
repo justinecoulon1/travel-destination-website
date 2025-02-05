@@ -1,7 +1,8 @@
 <div class="detail-page-container">
     <div class="detail-page-header">
-        <button onclick=navigateToDestinationsPage() class="back-button"><img src="/images/back.png"
-                alt="back button"></button>
+        <button onclick="navigateToDestinationsPage()" class="back-button">
+            <img src="/images/back.png" alt="back button">
+        </button>
         <h4>{{destination.name}}</h4>
     </div>
     <div class="main-content-container">
@@ -16,12 +17,33 @@
             <div class="description-div">
                 <p>{{destination.description}}</p>
             </div>
+
+            <div id="map"></div>
         </div>
     </div>
 </div>
 
 <script>
+    var coordinates = {{ json destination.coordinates }};
+
     function navigateToDestinationsPage() {
         window.location.href = `/destinations`;
     }
+
+    function buildMap() {
+        var zoomLevel = 14;
+
+        var map = L.map('map').setView([coordinates[0], coordinates[1]], zoomLevel);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        var marker = L.marker([coordinates[0], coordinates[1]]).addTo(map);
+
+        marker._icon.src = "/images/pin-black.png"
+    }
+
+    buildMap();
 </script>

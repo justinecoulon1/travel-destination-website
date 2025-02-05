@@ -1,38 +1,108 @@
-<h2>Welcome to Explore the World – Your Ultimate Travel Companion</h2>
+<div class="clock">
+    <p class="current-time-text">Current time: </p>
+    <p class="clock-text"></p>
+</div>
+
+<div class="index-main-content-container">
+    <h2>Welcome to Explore the World – Your Ultimate Travel Companion</h2>
+
+    <div class="intro-text-div">
+        <p>
+            Are you ready to embark on the journey of a lifetime? Whether you're dreaming of ancient wonders,
+            breathtaking
+            natural landscapes, or vibrant cityscapes, we have something for every traveler. At Explore the World, we
+            bring
+            you the best travel destinations from around the globe – <strong>all in one place</strong>.
+        </p>
+        <p>
+            From the towering Eiffel Tower in Paris to the mystic ruins of Machu Picchu in Peru, our curated list of
+            destinations is designed to inspire your next adventure. Dive into the heart of ancient civilizations,
+            witness
+            the
+            world's most iconic landmarks, and explore hidden gems that will leave you in awe.
+    </div>
+
+    <div class="text-div">
+        <h4>What We Offer:</h4>
+        <ul>
+            <li>
+                Inspiring Destinations: Discover the world’s most awe-inspiring places, from world wonders like the
+                Great
+                Wall
+                of China to modern marvels such as the Burj Khalifa in Dubai.
+            </li>
+
+            <li>
+                Comprehensive Travel Guides: Get all the information you need to plan your perfect getaway – including
+                detailed
+                descriptions, must-see spots, insider tips, and more.
+            </li>
+            <li>
+                Visual Journeys: Browse stunning images and thumbnails to bring your dream destinations to life.
+            </li>
+            <li>
+                Tailored Recommendations: No matter your travel style – adventure, culture, history, or luxury – we’ll
+                help
+                you
+                find the perfect destination.
+            </li>
+        </ul>
+    </div>
 
 
+    <div class="text-div">
+        <h4>Featured Destinations:</h4>
+        <ul>
+            <li>
+                Eiffel Tower – Paris, France: A symbol of love and a must-see for anyone visiting the City of Lights.
+            </li>
+            <li>
+                Machu Picchu – Peru: A stunning ancient Inca city perched high in the Andes.
+            </li>
+            <li>
+                Great Wall of China – Beijing, China: Walk along one of the most iconic architectural feats in human
+                history.
+            </li>
+            <li>
+                Taj Mahal – Agra, India: Marvel at this timeless symbol of love and exquisite Mughal architecture.
+            </li>
+        </ul>
+    </div>
 
-{{!-- Are you ready to embark on the journey of a lifetime? Whether you're dreaming of ancient wonders, breathtaking
-natural
-landscapes, or vibrant cityscapes, we have something for every traveler. At Explore the World, we bring you the best
-travel destinations from around the globe – all in one place.
+    <div class="text-div">
+        <h4>Why Choose Explore the World?</h4>
+        <ul>
+            <li>User-Friendly Experience: Our intuitive website makes it easy to explore destinations, plan your trips,
+                and
+                find
+                the best recommendations.
+            </li>
+            <li>Trusted Information: We provide reliable details, real reviews, and insider tips to help you make the
+                best
+                decisions for your travels.
+            </li>
+            <li>Inspiration for Every Traveler: Whether you're a solo adventurer, a family looking for relaxation, or a
+                thrill-seeker, you'll find something to suit your tastes.
+            </li>
+            <li>Start your adventure now and discover the world like never before. Explore the World – where your dream
+                destinations become a reality.
+            </li>
+        </ul>
+    </div>
+</div>
 
-From the towering Eiffel Tower in Paris to the mystic ruins of Machu Picchu in Peru, our curated list of destinations is
-designed to inspire your next adventure. Dive into the heart of ancient civilizations, witness the world's most iconic
-landmarks, and explore hidden gems that will leave you in awe.
+<script>
+    function updateClock() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, 0);
+        const min = now.getMinutes().toString().padStart(2, 0);
+        const sec = now.getSeconds().toString().padStart(2, 0);
 
-What We Offer:
+        const timeString = `${hours} : ${min} : ${sec}`
+        const clockDiv = document.querySelector(".clock-text");
+        clockDiv.textContent = timeString
+    }
 
-Inspiring Destinations: Discover the world’s most awe-inspiring places, from world wonders like the Great Wall of China
-to modern marvels such as the Burj Khalifa in Dubai.
-Comprehensive Travel Guides: Get all the information you need to plan your perfect getaway – including detailed
-descriptions, must-see spots, insider tips, and more.
-Visual Journeys: Browse stunning images and thumbnails to bring your dream destinations to life.
-Tailored Recommendations: No matter your travel style – adventure, culture, history, or luxury – we’ll help you find the
-perfect destination.
-Featured Destinations:
-
-Eiffel Tower – Paris, France: A symbol of love and a must-see for anyone visiting the City of Lights.
-Machu Picchu – Peru: A stunning ancient Inca city perched high in the Andes.
-Great Wall of China – Beijing, China: Walk along one of the most iconic architectural feats in human history.
-Taj Mahal – Agra, India: Marvel at this timeless symbol of love and exquisite Mughal architecture.
-Why Choose Explore the World?
-
-User-Friendly Experience: Our intuitive website makes it easy to explore destinations, plan your trips, and find the
-best recommendations.
-Trusted Information: We provide reliable details, real reviews, and insider tips to help you make the best decisions for
-your travels.
-Inspiration for Every Traveler: Whether you're a solo adventurer, a family looking for relaxation, or a thrill-seeker,
-you'll find something to suit your tastes.
-Start your adventure now and discover the world like never before. Explore the World – where your dream destinations
-become a reality. --}}
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
