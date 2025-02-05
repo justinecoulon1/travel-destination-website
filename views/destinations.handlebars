@@ -2,7 +2,7 @@
 
 <div class="destinations-container">
   {{#each destinations}}
-    <div class="card-div">
+    <div class="card-div" onclick=navigateToDestination('{{this.image}}')>
       <div class="card-header">
         <div class="img-div">
           <img src="images/destinations/{{this.image}}" alt="{{this.name}}" />
@@ -22,3 +22,10 @@
     <li>Personne n'a été encodé !</li>
   {{/each}}
 </div>
+
+<script>
+  function navigateToDestination(imageName) {
+    const destinationId = imageName.split('.')[0]; // Remove file extension
+    window.location.href = `/destinations/${destinationId}`;
+  }
+</script>

@@ -22,6 +22,17 @@ app.get('/destinations', (req, res) => {
     res.render('destinations', { destinations })
 })
 
+app.get('/destinations/:destinationId', (req, res) => {
+    const destinationId = req.params.destinationId;
+    const destination = data.find(dest => dest.image.split('.')[0] === destinationId);
+
+    if (!destination) {
+        return res.status(404).send("Destination not found");
+    }
+
+    res.render('destination', { destination });
+});
+
 app.listen(3000, () => {
     console.log(`Web server is running on port 3000`)
 })
