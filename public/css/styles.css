@@ -35,6 +35,8 @@ main {
     justify-content: space-between;
     align-items: center;
 
+    z-index: 1;
+
     height: var(--header-footer-height);
     width: 100vw;
 
@@ -325,7 +327,7 @@ h2 {
 #map {
     height: 20rem;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
 }
 
 .leaflet-touch .leaflet-bar a {
@@ -376,4 +378,8 @@ h2 {
 
         }
     }
+}
+
+.img-huechange {
+    filter: hue-rotate(140deg);
 }

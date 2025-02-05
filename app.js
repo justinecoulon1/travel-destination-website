@@ -26,6 +26,10 @@ app.get('/', (req, res) => {
 app.get('/destinations', (req, res) => {
     const destinations = data;
 
+    if (!destinations) {
+        return res.status(404).send("Error");
+    }
+
     res.render('destinations', { destinations })
 })
 

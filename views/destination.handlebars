@@ -42,7 +42,9 @@
 
         var marker = L.marker([coordinates[0], coordinates[1]]).addTo(map);
 
-        marker._icon.src = "/images/pin-black.png"
+        const myCustomColour = '#583470'
+
+        marker._icon.classList.add("img-huechange");
     }
 
     buildMap();
