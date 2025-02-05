@@ -1,1 +1,27 @@
-<h4>{{destination.name}}</h4>
+<div class="detail-page-container">
+    <div class="detail-page-header">
+        <button onclick=navigateToDestinationsPage() class="back-button"><img src="/images/back.png"
+                alt="back button"></button>
+        <h4>{{destination.name}}</h4>
+    </div>
+    <div class="main-content-container">
+        <div class="img-container">
+            <img src="/images/destinations/{{destination.image}}" alt="">
+        </div>
+        <div class="info-container">
+            <div class="adress-div">
+                <img src="/images/pin.png" alt="pin" />
+                <p>{{destination.location}}</p>
+            </div>
+            <div class="description-div">
+                <p>{{destination.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function navigateToDestinationsPage() {
+        window.location.href = `/destinations`;
+    }
+</script>

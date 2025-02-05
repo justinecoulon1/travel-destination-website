@@ -2,15 +2,15 @@
 
 <div class="destinations-container">
     {{#each destinations}}
-    <div class="card-div" onclick=navigateToDestination('{{this.id}}')>
+    <div class="card-div" onclick=navigateToDestination({{this.id}})>
         <div class="card-header">
             <div class="img-div">
-                <img src="images/destinations/{{this.image}}" alt="{{this.name}}" />
+                <img src="/images/destinations/{{this.image}}" alt="{{this.name}}" />
             </div>
             <div class="name-div">
                 <h4 class="name">{{this.name}}</h4>
                 <div class="location-div">
-                    <img src="images/pin.png" alt="pin" />
+                    <img src="/images/pin.png" alt="pin" />
                     <p>{{this.location}}</p>
                 </div>
             </div>
