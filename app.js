@@ -24,7 +24,7 @@ app.get('/destinations', (req, res) => {
 
 app.get('/destinations/:destinationId', (req, res) => {
     const destinationId = req.params.destinationId;
-    const destination = data.find(dest => dest.image.split('.')[0] === destinationId);
+    const destination = data.find(dest => dest.id === parseInt(destinationId));
 
     if (!destination) {
         return res.status(404).send("Destination not found");
