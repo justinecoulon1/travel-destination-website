@@ -389,7 +389,7 @@ h2 {
     width: 50%;
     height: 100%;
 
-    gap: 1rem;
+    gap: 3rem;
 
     .form-div,
     .text-div {
@@ -431,6 +431,7 @@ h2 {
     .text-div {
         display: flex;
         justify-content: center;
-        align-items: center;
+
+        text-align: justify;
     }
 }
