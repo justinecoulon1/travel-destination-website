@@ -21,7 +21,6 @@ app.engine('handlebars', engine({
 }));
 
 app.get('/', (req, res) => {
-
     res.render('index')
 })
 
@@ -58,8 +57,7 @@ app.post('/about', (req, res) => {
         return;
     }
 
-    res.redirect('/about');
-    openLightbox()
+    res.render('about', { success: 'Form submitted successfully!' });
 });
 
 app.listen(3000, () => {
