@@ -59,6 +59,7 @@ app.post('/about', (req, res) => {
     }
 
     res.redirect('/about');
+    openLightbox()
 });
 
 app.listen(3000, () => {
